@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.taskBar{
+  width:100%;
+  background-color: rgb(18, 118, 194);
+  color: white;
+  
+  display: flex;
+}
+.taskBar h1{
+  margin-right: auto;
+  margin-left: 2rem;
+ 
+}
+.taskBar form{
+  margin-left: auto;
+  margin-right: 14rem;
+ 
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.5rem;
+}
+.taskBar form button{
+  border:none;
+  color:white;
+  background-color: #db481f;
+  cursor: pointer;
+  padding: 0.8rem;
+  margin-left: 1rem;
+}
+.taskBar form input{
+  margin-right: 0.8rem;
+  font-size: 1rem;
+}
+.taskBar form select{
+  font-size:1rem;
+}
+.mainContainer{
+  width:75%;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border:black solid 1px;
+}
+.statusContainer{
+  width:100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+ 
+}
+.statusBar{
+   width:100%;
+   border:solid 1px black;
+   background-color:antiquewhite;
+}
+.statusBar:hover{
+  background-color: antiquewhite;
+}
+.statusBarHover{
+  background-color: rgb(183, 172, 159);
+}
+.taskBox{
+    height:6rem;
+    background-color: white;
+    width:15rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.1rem;
+    margin-bottom: 1rem;
+    cursor:move;
+    box-shadow: black 3px 3px 10px;
+}
+.taskBox::after{
+  height:5rem;
+  width:5rem;
+  background-color: aqua;
+  position: absolute;
+}
+.statusHeader{
+  width:100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+}
+.status{
+  padding: 1rem;
+}
+.change{
+  background-color: #d3d2d2;
+}
+#progress{
+ background-color: rgb(31, 126, 204);
+}
+#completed{
+  background-color: rgb(31, 204, 161);
+}
+#closed{
+  background-color: rgb(204, 60, 31);
+}
